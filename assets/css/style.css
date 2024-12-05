@@ -1,0 +1,66 @@
+.sidenav {
+    background-color: #333;
+    position: fixed;
+    height: 100%;
+    width: 15%; /* Sidebar width */
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    color: #fff;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    transition: background 0.3s ease;
+}
+
+.sidenav a:hover {
+    background-color: #575757;
+}
+
+.sidenav h2 {
+    padding: 15px 20px;
+    color: #fff;
+    border-bottom: 1px solid #575757;
+    font-size: 22px;
+}
+
+.main {
+    margin-left: 15%; /* Matches the width of the sidebar */
+    padding: 20px;
+    color: #fff; /* Updated text color */
+    display: block;
+}
+
+/* Styling for "Siddiqie" and the date */
+.main p {
+    color: #fff; /* Makes text white */
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .sidenav {
+        width: 150px;
+    }
+
+    .main {
+        margin-left: 25%; /* Adjust margin for smaller screen */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .sidenav {
+        width: 120px;
+    }
+
+    .main {
+        margin-left: 30%; /* Adjust margin further for narrow screens */
+    }
+}
